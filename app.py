@@ -15,7 +15,7 @@ logging.getLogger("streamlit").setLevel(logging.ERROR)
 def load_data():
     try:
         # Replace this with your actual dataset path
-        data = pd.read_csv("d:/AIML/projects/anime/anime_dataset_preprocessed.csv")
+        data = pd.read_csv("anime_dataset_preprocessed.csv")
         return data
     except Exception as e:
         st.error(f"Error loading dataset: {e}")
